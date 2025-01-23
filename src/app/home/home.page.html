@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Registro de Eventos
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -22,12 +22,12 @@
   <button (click)="crearEvento()">Registrar Evento</button>
   <br>
   <div *ngFor="let evento of eventos">
-    <h2>{{evento.nombreEvento}}</h2>
-    <h2>{{evento.fechaInicio}}</h2>
-    <h2>{{evento.fechaFin}}</h2>
-    <h2>{{evento.ubicacion}}</h2>
-    <h2>{{evento.nombreEncargado}}</h2>
-    <h2>{{evento.telefonoEncargado}}</h2>
+    <h2>Nombre del Evento: {{evento.nombreEvento}}</h2>
+    <h2>Fecha de Inicio: {{evento.fechaInicio}}</h2>
+    <h2>Fecha De Cierre: {{evento.fechaFin}}</h2>
+    <h2>Ubicacion: {{evento.ubicacion}}</h2>
+    <h2>Nombre del Encargado: {{evento.nombreEncargado}}</h2>
+    <h2>Telefono del Encargado: {{evento.telefonoEncargado}}</h2>
     <ion-checkbox>Confirmar</ion-checkbox>
   </div>
 
