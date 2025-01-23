@@ -25,3 +25,63 @@
 #container a {
   text-decoration: none;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+ion-header {
+  background-color: #007bff;
+  color: white;
+}
+
+ion-toolbar {
+  --background: #007bff;
+  --color: white;
+}
+
+ion-content {
+  padding: 16px;
+}
+
+ion-input {
+  display: block;
+  margin: 12px 0;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.bg-blue-500 {
+  background-color: #007bff;
+  color: white;
+}
+
+button.bg-blue-500:hover {
+  background-color: #0056b3;
+}
+
+div {
+  margin: 16px 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+h2 {
+  margin: 8px 0;
+}

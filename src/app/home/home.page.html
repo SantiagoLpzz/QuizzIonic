@@ -9,12 +9,26 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Registro de Eventos</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-input [(ngModel)]="nombreEvento.value" label="Nombre del Evento"></ion-input>
+  <ion-input [(ngModel)]="fechaInicio.value" label="Fecha de Inicio" type="datetime-local"></ion-input>
+  <ion-input [(ngModel)]="fechaFin.value" label="Fecha de Fin" type="datetime-local"></ion-input>
+  <ion-input [(ngModel)]="ubicacion.value" label="Ubicacion"></ion-input>
+  <ion-input [(ngModel)]="nombreEncargado.value" label="Nombre del Encargado"></ion-input>
+  <ion-input [(ngModel)]="telefonoEncargado.value" label="Telefono del Encargado"></ion-input>
+  <button (click)="crearEvento()">Registrar Evento</button>
+  <br>
+  <div *ngFor="let evento of eventos">
+    <h2>{{evento.nombreEvento}}</h2>
+    <h2>{{evento.fechaInicio}}</h2>
+    <h2>{{evento.fechaFin}}</h2>
+    <h2>{{evento.ubicacion}}</h2>
+    <h2>{{evento.nombreEncargado}}</h2>
+    <h2>{{evento.telefonoEncargado}}</h2>
+    <ion-checkbox>Confirmar</ion-checkbox>
   </div>
+
 </ion-content>
