@@ -1,0 +1,7 @@
+{
+  "name": "QuizzIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
